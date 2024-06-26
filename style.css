@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: #000;
+}
+
+.tudo{
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    display: block;
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section.modulo p{
+    margin-bottom: 40px;
+}
+section.modulo:last-child{
+    margin-bottom: 0;
+}
+section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.modulo.content{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+section.modulo.p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+section.p:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, #000 100%);
+}
+@media screen and (max-width: 800px) {
+    section.modulo.p {
+        background-attachment: scroll; /* Altera para scroll em telas menores para permitir rolagem da imagem */
+    }
+}
+
+section.modulo.p-1{
+    background-image: url(https://shopee.com.br/blog/wp-content/uploads/2021/11/Os-melhores-jogos-de-videogame-para-celular-para-jogar.jpg);
+}
+section.modulo.p-2{
+    background-image: url(https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f);
+}
+section.modulo.p-3{
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7f7ed6e67906d7747be88529a305f6e78c06dea9-1920x1080.jpg?auto=format&fit=fill&q=80&w=1082);
+}
+section.modulo.p-4{
+    background-image: url(https://assetsio.gnwcdn.com/eurogamer-zjp1vx.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp);
+}
+section.modulo.p-5{
+    background-image: url(https://t2.tudocdn.net/368303?w=1920);
+}
+section.modulo.p h1{
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    z-index: 50;
+    text-transform: uppercase;
+}
